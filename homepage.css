@@ -1,0 +1,191 @@
+/* ----------
+   HOMEPAGE.CSS 
+   ---------- */
+
+/* --- 1. Baner Hero 16:9 --- */
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 50vh; 
+    border-radius: 5px; 
+    overflow: hidden; 
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%; 
+    display: block;
+    object-fit: cover; 
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #f5f5f5;
+    transform: translate(-50%, -2px); 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 120px; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #ffffff;
+    font-size: 3rem; 
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    white-space: nowrap; 
+}
+
+.hero-subtitle {
+    position: absolute;
+    bottom: 90px; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+}
+
+/* --- 2. Siatka 3 Kategorii --- */
+
+.category-grid {
+    display: flex;
+    justify-content: center; 
+    
+    margin-top: 20px;
+    max-width: 1000px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category-item {
+    flex-basis: 30%; 
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+    position: relative;
+    
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.category-item:not(:first-child) {
+    margin-left: 3%; 
+}
+
+.category-item:hover {
+    transform: scale(1.03); 
+}
+
+.category-item:hover .category-button {
+    background-color: #f0f0f0;
+    transform: translate(-50%, -2px);
+}
+
+.category-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.category-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 18px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+/* --- 3. Siatka 4 Kolekcji --- */
+
+.collection-grid {
+    max-width: 1000px; 
+    
+    margin: 20px auto 20px auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+    color: #413d3d; 
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.collection-items {
+    display: flex;
+    justify-content: center; 
+}
+
+.collection-item {
+    flex-basis: 22%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 0.5;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    
+    position: relative; 
+}
+
+.collection-item:not(:first-child) {
+    margin-left: 2%; 
+}
+
+.collection-item:hover {
+    transform: scale(1.03);
+}
+
+.collection-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection-item-title {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}

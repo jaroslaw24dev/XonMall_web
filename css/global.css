@@ -1,0 +1,167 @@
+/* ----------
+   GLOBAL.CSS 
+   Style dla całego serwisu
+   ---------- */
+
+/* Podstawowy reset i ustawienia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+
+    background-color: #f4f4f4;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Nawigacja (będzie na każdej stronie) --- */
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+    position: relative;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    padding: 10px -10px 10px ;
+    margin-right: auto;
+}
+
+.hamburger-menu img {
+    height: 50px;
+    width: 100px;
+    display: block;
+    
+}
+
+.main-nav .logo {
+    display: block;
+    font-size: 0;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-nav .logo img {
+    height: 25px;
+    width: auto;
+    display: block;
+}
+
+.main-nav a:hover {
+    color: #000;
+}
+
+/* --- Stopka (będzie na każdej stronie) --- */
+.main-footer {
+    padding: 20px 20px;
+    background-color: #ffffff;
+    color: #333;
+    border-top: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.footer-social, .footer-payment {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social img {
+    height: 24px;
+    width: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social a:hover img {
+    opacity: 1;
+}
+
+.footer-payment img {
+    height: 22px;
+    width: auto;
+    opacity: 0.8;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    color: #a05858;
+    margin-top: 20px;
+}
+
+/* --- Ogólny kontener dla treści strony --- */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+   
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    flex-grow: 1;
+}
+
+.cart-icon {
+    margin-left: auto;
+    padding: 10px;
+}
+.cart-icon a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
+.cart-icon img {
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    height: 18px;
+    min-width: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.section-spacing {
+    padding: 20px;
+    margin-top: 20px;
+}
