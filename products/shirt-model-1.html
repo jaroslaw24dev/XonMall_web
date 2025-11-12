@@ -10,11 +10,20 @@
 </head>
 <body>
 
+    <nav id="side-menu" class="side-menu-nav">
+        <a href="index.html" class="menu-item">Home</a>
+        <a href="../products/index.html" class="menu-item">Collections</a>
+        <a href="#" class="menu-item">New Arrivals</a>
+        <a href="#" class="menu-item">Sale</a>
+        <a href="../privacy.html" class="menu-item">Privacy</a>
+    </nav>
+
+
     <div id="cookie-consent-banner" class="cookie-banner">
         <p>
     We use cookies (and Microsoft Clarity) to analyze site traffic and understand where our audience is coming from. 
     By clicking "Accept", you consent to our use of cookies.
-    <a href="privacy.html" class="cookie-privacy-link">Learn more in our Privacy Statement.</a>
+    <a href="../privacy.html" class="cookie-privacy-link">Learn more in our Privacy Statement.</a>
 </p>
         <div class="cookie-buttons">
             <button id="cookie-accept-btn">Accept</button>
@@ -24,14 +33,16 @@
     
     <header class="main-header">
         <nav class="main-nav">
-            <div class="hamburger-menu">
-                <img src="../img/global/menu.png" alt="Menu">
-            </div>
-            <a href="index.html" class="logo">
+            <div class="hamburger-menu" id="hamburger-toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+            <a href="../index.html" class="logo">
                 <img src="../img/global/name2.jpg" alt="XonMall Home">
             </a>
             <div class="cart-icon">
-                <a href="/cart/index.html">
+                <a href="../cart/index.html">
                     <img src="../img/global/cart-icon.png" alt="Shopping Cart">
                     <span class="cart-badge">0</span>
                 </a>
@@ -40,17 +51,21 @@
     </header>
 
     <main class="product-page-main">
-        
-        <div class="product-layout">
-            
+
             <div class="product-gallery">
-                <img src="../img/prod/test.jpg" alt="Main product" class="gallery-main-image">
-                <div class="gallery-thumbnails">
-                    <img src="../img/prod/test2.jpg" alt="Thumbnail 1" class="thumbnail active">
-                    <img src="../img/prod/test3.jpg" alt="Thumbnail 2" class="thumbnail">
-                    <img src="../img/prod/test4.jpg" alt="Thumbnail 3" class="thumbnail">
-                </div>
-            </div>
+    <img src="../img/prod/test.jpg" alt="Main product" class="gallery-main-image">
+
+    <div class="gallery-thumbnails">
+
+        <img src="../img/prod/test.jpg" alt="Thumbnail 1" 
+             class="thumbnail active" 
+             data-full-src="../img/prod/test.jpg">
+
+        <img src="../img/prod/test2.jpg" alt="Thumbnail 2" class="thumbnail" data-full-src="../img/prod/test2.jpg">
+        <img src="../img/prod/test3.jpg" alt="Thumbnail 3" class="thumbnail" data-full-src="../img/prod/test3.jpg">
+        <img src="../img/prod/test4.jpg" alt="Thumbnail 4" class="thumbnail" data-full-src="../img/prod/test4.jpg">
+    </div>
+</div>
             
             <div class="product-info">
                 <h1 class="product-title">Classic Cotton T-Shirt</h1>
@@ -80,7 +95,14 @@
                         </select>
                     </div>
                     
-                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                    <button type="button" 
+        id="add-to-cart-button" 
+        class="add-to-cart-btn"
+        data-product-id="tshirt-001"
+        data-product-name="Classic Cotton T-Shirt"
+        data-product-price="29.99">
+    Add to Cart
+</button>
                 </form>
             </div>
             
@@ -100,5 +122,7 @@
 </footer>
 
 <script src="../js/consent.js"></script>
+<script src="../js/product-gallery.js"></script>
+<script src="../js/main.js"></script> </body>
 </body>
 </html>

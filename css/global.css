@@ -281,3 +281,78 @@ main {
 .text-content a:hover {
     color: #0056b3;
 }
+
+.hamburger-menu {
+    padding: 10px 0;
+    cursor: pointer;
+    z-index: 1002;
+    position: relative;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.side-menu-nav {
+    height: 100vh;
+    width: 280px;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: -280px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    transition: left 0.3s ease-out;
+    padding-top: 80px;
+}
+
+.backdrop-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-item {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #444;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+.menu-item:hover {
+    background-color: #f9f9f9;
+}
+
+.side-menu-open {
+    left: 0;
+}
+
+.backdrop-open {
+    display: block;
+    opacity: 1;
+}

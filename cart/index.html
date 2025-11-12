@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    
+    <link rel="stylesheet" href="../css/global.css">
+    
+    <style>
+        .cart-main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 5px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .cart-item-details {
+            font-size: 1.1rem;
+        }
+        .cart-item-price {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .cart-total {
+            margin-top: 30px;
+            text-align: right;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cookie-consent-banner" class="cookie-banner">
+        <p>We use cookies (and Microsoft Clarity) to analyze site traffic and understand where our audience is coming from. 
+            By clicking "Accept", you consent to our use of cookies.
+            <a href="../privacy.html" class="cookie-privacy-link">Learn more in our Privacy Statement.</a>
+        </p>
+        <div class="cookie-buttons">
+            <button id="cookie-accept-btn">Accept</button>
+            <button id="cookie-decline-btn">Decline</button>
+        </div>
+    </div>
+
+    <nav id="side-menu" class="side-menu-nav">
+        <a href="index.html" class="menu-item">Home</a>
+        <a href="../products/index.html" class="menu-item">Collections</a>
+        <a href="#" class="menu-item">New Arrivals</a>
+        <a href="#" class="menu-item">Sale</a>
+        <a href="../privacy.html" class="menu-item">Privacy</a>
+    </nav>
+    <div id="backdrop" class="backdrop-overlay"></div>
+
+    <header class="main-header">
+       <nav class="main-nav">
+            <div class="hamburger-menu" id="hamburger-toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+            <a href="../index.html" class="logo">
+                <img src="../img/global/name2.jpg" alt="XonMall Home">
+            </a>
+            <div class="cart-icon">
+                <a href="../cart/index.html">
+                    <img src="../img/global/cart-icon.png" alt="Shopping Cart">
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-main">
+        <h1>Your Shopping Cart</h1>
+        
+        <div id="cart-items-container">
+            </div>
+        
+        <div class="cart-total">
+            Total: <span id="cart-total-cost">$0.00</span>
+        </div>
+    </main>
+
+     <footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-social">
+            <a href="https://github.com/jaroslaw24dev"><img src="../img/github.png" alt="GitHub"></a>
+        </div>
+
+        <p class="footer-copy">&copy; 2025 XonMall. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="../js/consent.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
